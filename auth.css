@@ -1,0 +1,140 @@
+/* =========================================
+   GLOBAL AUTH PAGE STYLING 
+   Login & Register (Glass UI + Modern Style)
+   ========================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================
+   WRAPPER CARD
+   ========================================= */
+.auth-container {
+    width: 400px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 18px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: white;
+}
+
+/* =========================================
+   TITLE & SUBTITLE
+   ========================================= */
+.auth-container h2 {
+    margin-bottom: 5px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.auth-container p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    opacity: .9;
+}
+
+/* =========================================
+   FORM INPUTS
+   ========================================= */
+.auth-container input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.45);
+    color: #222;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.auth-container input:focus {
+    background: rgba(255, 255, 255, 0.7);
+    transform: scale(1.03);
+}
+
+/* =========================================
+   BUTTON
+   ========================================= */
+.auth-container button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: #00c6ff;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.auth-container button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #009fe3, #0059d4);
+}
+
+/* =========================================
+   ERROR & SUCCESS BOX
+   ========================================= */
+.error-box,
+.success-box {
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.error-box {
+    background: rgba(255, 90, 90, 0.35);
+    color: #fff;
+    border-left: 4px solid #ff2e2e;
+}
+
+.success-box {
+    background: rgba(81, 255, 135, 0.35);
+    color: #003f15;
+    border-left: 4px solid #00c853;
+}
+
+/* =========================================
+   LINK TO OTHER PAGE
+   ========================================= */
+.auth-link {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: #00f2ff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 480px) {
+    .auth-container {
+        width: 90%;
+        padding: 25px;
+    }
+}
